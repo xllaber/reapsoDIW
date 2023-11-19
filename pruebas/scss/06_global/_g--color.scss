@@ -1,0 +1,25 @@
+//@import "pruebas/scss/01_utilites/sass_varaibles";
+
+:root {
+  @each $key, $color in $colors {
+    @for $i from 1 through length($color) {
+      --color-#{$key}-#{$i}: #{nth($color, $i)};
+    }
+  }
+}
+
+@each $key, $color in $colors {
+  @for $i from 1 through length($color) {
+    .g--color-#{$key}-#{$i} {
+      color: var(--color-#{$key}-#{$i});
+    }
+  }
+}
+
+@each $key, $color in $colors {
+  @for $i from 1 through length($color) {
+    .g--bg-color-#{$key}-#{$i} {
+      background-color: var(--color-#{$key}-#{$i});
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.l-grid-area{
+  display: grid;
+  grid-template-areas:
+    "left-bar header header right-bar"
+    "left-bar content content right-bar"
+    "left-bar footer footer right-bar";
+
+  &__right-bar{
+    grid-area: right-bar;
+    text-align: center;
+  }
+  &__left-bar{
+    grid-area: left-bar;
+    text-align: center;
+  }
+  &__content{
+    grid-area: content;
+    text-align: center;
+  }
+  &__header{
+    grid-area: header;
+    text-align: center;
+  }
+  &__footer{
+    grid-area: footer;
+    text-align: center;
+  }
+}

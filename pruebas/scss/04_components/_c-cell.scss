@@ -1,0 +1,14 @@
+.c-cell{
+  --c-cell-background-color-default: var(--color-purple-5);
+  --c-cell-border-color-default: var(--color-yellow-3);
+  --c-cell-text-color: var(--color-yellow-1);
+  --c-cell-padding-y: var(--padding-3, 10px);
+  --c-cell-padding-x: var(--padding-6, 40px);
+
+  @include padding-x(var(--c-cell-padding-x));
+  @include padding-y(var(--c-cell-padding-y));
+
+  background-color: var(--c-cell-background-color-default);
+  color: var(--c-cell-text-color);
+  text-align: center;
+}

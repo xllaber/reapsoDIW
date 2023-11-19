@@ -1,0 +1,20 @@
+.c-square {
+  --c-square-background-color-default: var(--color-blue-5);
+  --c-square-background-color-last: var(--color-green-5);
+  --c-square-background-color-first: var(--color-red-5);
+  --margin-x: var(--margin-6);
+  
+  width: 200px;
+  height: 200px;
+  background-color: var(--c-square-background-color-default);
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
+  display: inline-block;
+  &--first {
+    margin-left: 0;
+    background-color: var(--c-square-background-color-first);
+  }
+  &--last {
+    background-color: var(--c-square-background-color-last);
+  }
+}
